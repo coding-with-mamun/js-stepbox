@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 19px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.survey-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.survey-container .survey-progress {
+  max-width: 360px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.survey-container .survey-progress span {
+  color: #000;
+}
+
+.survey-container .survey-progress .survey-bar {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  height: 8px;
+}
+.survey-container .survey-progress .survey-bar span {
+  background-color: #e9a800;
+  border-radius: 2px;
+  transition: width 0.5s ease;
+  width: 50%;
+  -webkit-transition: width 0.5s ease;
+  -moz-transition: width 0.5s ease;
+  -ms-transition: width 0.5s ease;
+  -o-transition: width 0.5s ease;
+}
+
+.survey-container .survey-stepbox,
+.survey-container .survey-final-box {
+  padding: 0 0;
+  display: flex;
+  flex-direction: column;
+}
+.survey-container .survey-stepbox p {
+  font-size: 28px;
+  text-align: center;
+}
+
+.survey-container .survey-stepbox button,
+.survey-container .survey-popup a {
+  text-align: center;
+  background-color: #e9a800;
+  border-radius: 3px;
+  border-color: transparent;
+  padding: 15px 0px;
+  margin: 10px 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none !important;
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+
+.survey-container .survey-popup {
+  text-align: center;
+  padding: 40px 34px;
+  margin: 15px 0;
+  background-color: #fff;
+  border-top: 5px solid #00007c;
+  line-height: 1.75;
+  box-shadow: 0 0 7px 0 rgb(0 0 0 / 20%);
+  transition: all 0.2s ease;
+}
+
+.survey-container .survey-popup h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.survey-container .survey-final-box p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.survey-container .survey-final-box strong {
+  color: #2fbdaa;
+}
+
+.survey-container .survey-final-box h5 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.survey-container .survey-final-box span {
+  color: #ff0000;
+}
+
+.survey-container .surveyStepTwo,
+.survey-container .surveyStepThree,
+.survey-container .surveyStepFour,
+.survey-container .surveyStepFive,
+.survey-container .surveyStepSix,
+.survey-container .surveyStepProgress {
+  display: none;
+  transition: all 0.5s ease;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -ms-transform: translateY(10px);
+  -o-transform: translateY(10px);
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+
+.survey-container .surveyProgressActive,
+.survey-container .survey-active {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -o-transform: translateX(0);
+}
+.survey-container .surveyStepProgress {
+  display: inline-block;
+  margin: 0;
+}
+.survey-container .surveyProgressActive {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 10px;
+}

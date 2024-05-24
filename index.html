@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="survey-container">
+      <div class="survey-progress surveyStepProgress">
+        <span class="surveyProgressText">50% Complete</span>
+        <div class="survey-bar">
+          <span></span>
+        </div>
+      </div>
+
+      <div class="survey-stepbox surveyStepOne">
+        <p>Are you on Medicaid/Medicare?</p>
+        <button class="q-btn q1-btn surveyStepOneBtn">Yes</button>
+        <button class="q-btn q1-btn surveyStepOneBtn">No</button>
+      </div>
+
+      <div class="survey-stepbox q2 surveyStepTwo">
+        <p>Do You Live In The United States?</p>
+        <button class="q-btn surveyStepTwoBtn">Yes</button>
+        <button class="q-btn surveyStepTwoBtn">No</button>
+      </div>
+
+      <div class="survey-popup surveyStepThree">
+        <h2>Reviewing your answer</h2>
+      </div>
+
+      <div class="survey-popup surveyStepFour">
+        <h2>Matching with best option</h2>
+      </div>
+
+      <div class="survey-popup surveyStepFive">
+        <h2>Confirming Eligiblity</h2>
+      </div>
+
+      <div class="survey-final-box survey-popup surveyStepSix">
+        <h2>Congratulations!</h2>
+        <p>
+          You qualify to receive a call from an ACA Specialist about the
+          <strong
+            >FREE medical, dental, pharmacy, and even rental assistance</strong
+          >.
+        </p>
+        <h4>
+          Call us now to see if you qualify before the enrollment period ends
+        </h4>
+        <h2 class="pNumber">(833) 203-2781</h2>
+        <a
+          href="tel:+18332032781"
+          class="track_c tapTocall"
+          style="background: #3c9740"
+          >Tap to call</a
+        >
+        <h5>
+          Act fast! This pre-approval expires in
+          <span class="surveyStepMinus">00:00</span>
+        </h5>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
