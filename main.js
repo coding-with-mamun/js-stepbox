@@ -1,6 +1,7 @@
 // Get all main elements
 const surveyStepProgress = document.querySelector(".surveyStepProgress");
 const surveyProgressText = document.querySelector(".surveyProgressText");
+const surveyStepSixCloseBtn = document.querySelector(".surveyStepSixCloseBtn");
 const surveyStepProgressBar = document.querySelector(
   ".surveyStepProgress .survey-bar span"
 );
@@ -106,3 +107,28 @@ surveyStepTwoBtn.forEach((item) => {
     }, 1000);
   };
 });
+
+// close last box
+if (surveyStepSixCloseBtn) {
+  surveyStepSixCloseBtn.onclick = () => {
+    // Reset progress bar to 0%
+    surveyStepProgressBar.style.width = "0%";
+
+    // Hide all steps except the first one
+    surveySteps.forEach((step, index) => {
+      if (index !== 0) {
+        step.style.display = "none";
+        step.classList.remove("survey-active");
+      } else {
+        step.style.display = "block";
+        step.classList.add("survey-active");
+      }
+    });
+
+    // Update progress text to initial state
+    surveyProgressText.innerHTML = "0% Complete";
+
+    // Remove any active state from progress bar
+    surveyStepProgress.classList.remove("surveyProgressActive");
+  };
+}
