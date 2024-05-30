@@ -120,6 +120,7 @@ body {
   cursor: pointer;
   font-size: 22px;
 }
+
 .surveyStepSixCloseBtn:hover {
   background-color: #ff0000;
   color: #fff;
